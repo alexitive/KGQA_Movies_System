@@ -1,11 +1,6 @@
-2022-04-20 16:32:47,645 INFO (StartupInfoLogger.java:50)- Starting App on DESKTOP-AT5UPGE with PID 20644 (F:\WorkPlace\GraduationProject\Spring-Boot-Neo4j-Movies\Spring-Boot-Neo4j-Movies\target\classes started by 14360 in F:\WorkPlace\GraduationProject\Spring-Boot-Neo4j-Movies\Spring-Boot-Neo4j-Movies)
-2022-04-20 16:32:47,656 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
-2022-04-20 17:18:48,621 INFO (StartupInfoLogger.java:50)- Starting App on DESKTOP-AT5UPGE with PID 2596 (F:\WorkPlace\GraduationProject\Spring-Boot-Neo4j-Movies\Spring-Boot-Neo4j-Movies\target\classes started by 14360 in F:\WorkPlace\GraduationProject\Spring-Boot-Neo4j-Movies\Spring-Boot-Neo4j-Movies)
-2022-04-20 17:18:48,627 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
-2022-04-20 17:19:05,253 INFO (StartupInfoLogger.java:59)- Started App in 17.461 seconds (JVM running for 20.245)
-2022-04-20 22:09:19,323 INFO (StartupInfoLogger.java:50)- Starting App on DESKTOP-AT5UPGE with PID 21080 (F:\Projects\Spring-Boot-Neo4j-Movies\target\classes started by 14360 in F:\Projects\Spring-Boot-Neo4j-Movies)
-2022-04-20 22:09:19,330 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
-2022-04-20 22:09:44,063 INFO (StartupInfoLogger.java:59)- Started App in 25.708 seconds (JVM running for 28.756)
-2022-04-20 22:17:34,768 INFO (StartupInfoLogger.java:50)- Starting App on DESKTOP-AT5UPGE with PID 13132 (F:\Projects\Spring-Boot-Neo4j-Movies\target\classes started by 14360 in F:\Projects\Spring-Boot-Neo4j-Movies)
-2022-04-20 22:17:34,783 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
-2022-04-20 22:18:02,449 INFO (StartupInfoLogger.java:59)- Started App in 28.773 seconds (JVM running for 32.001)
+2022-04-22 00:33:52,589 INFO (StartupInfoLogger.java:50)- Starting App on DESKTOP-AT5UPGE with PID 20768 (F:\Projects\Spring-Boot-Neo4j-Movies\target\classes started by 14360 in F:\Projects\Spring-Boot-Neo4j-Movies)
+2022-04-22 00:33:52,598 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2022-04-22 00:35:04,104 INFO (StartupInfoLogger.java:59)- Started App in 72.538 seconds (JVM running for 98.129)
+2022-04-22 00:43:01,857 INFO (StartupInfoLogger.java:50)- Starting App on DESKTOP-AT5UPGE with PID 19168 (F:\Projects\Spring-Boot-Neo4j-Movies\target\classes started by 14360 in F:\Projects\Spring-Boot-Neo4j-Movies)
+2022-04-22 00:43:01,866 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2022-04-22 00:43:29,478 INFO (StartupInfoLogger.java:59)- Started App in 28.22 seconds (JVM running for 30.458)
