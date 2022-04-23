@@ -11,7 +11,9 @@
     <groupId>com.appleyk</groupId>
     <artifactId>Spring-Neo4j-Movie</artifactId>
     <version>0.1.2-SNAPSHOT</version>
-    <packaging>war</packaging>
+<!--    打包方式-->
+    <packaging>jar</packaging>
+<!--    <packaging>jar</packaging>-->
     <description>SpringBoot集成Neo4j,结合Spark朴素贝叶斯分类器实现知识图谱的电影问答功能</description>
 
     <properties>
@@ -108,6 +110,18 @@
             <version>2.8</version>
         </dependency>
 
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.47</version>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.5.9</version>
+        </dependency>
     </dependencies>
 
     <build>

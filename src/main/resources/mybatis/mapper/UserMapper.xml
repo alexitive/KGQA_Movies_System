@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--接口根据全类名寻找映射文件-->
+<mapper namespace="com.mapper.UserMapper">
+
+<!--    public int getIdByName(String name);-->
+    <select id="getIdByName" resultType="int">
+        select id from user where name = #{name}
+    </select>
+
+<!--    User getUserById(int id);-->
+    <select id="getUserById" resultType="com.bean.User">
+        select * from `user`
+        where id = #{id}
+    </select>
+
+    <!--    User getUserByAccount(String name, String password);-->
+    <select id="getUserByAccount" resultType="com.bean.User">
+        select * from user
+        where name = #{name} and password = #{password}
+    </select>
+
+
+<!--    public List<User> getAllUser();-->
+    <select id="getAllUser" resultType="com.bean.User">
+        select * from user
+    </select>
+
+<!--    public void insertUser(User user);-->
+    <insert id="insertUser">
+        insert into user (name, password,comment)
+                         value
+                         (#{name}, #{password}, #{comment})
+    </insert>
+
+<!--    public void updateUserInfo(User user);-->
+    <update id="updateUserInfo">
+        update user
+        <set>
+            <if test="name != null">
+            </if>
+            <if test="password != null">
+                password = #{password},
+            </if>
+            <if test="comment != null">
+                comment = #{comment}
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+<!--    public void deleteUser(User user);-->
+    <delete id="deleteUser">
+        delete from user where id = #{id}
+    </delete>
+
+</mapper>
