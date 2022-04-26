@@ -16,6 +16,12 @@
         where id = #{id}
     </select>
 
+<!--    public int getUserByName(String name);-->
+    <select id="getUserByName" resultType="com.appleyk.model.User">
+        select * from user
+        where name = #{name}
+    </select>
+
     <!--    User getUserByAccount(String name, String password);-->
     <select id="getUserByAccount" resultType="com.appleyk.model.User">
         select * from user
@@ -36,11 +42,9 @@
     </insert>
 
 <!--    public void updateUserInfo(User user);-->
-    <update id="updateUserInfo">
+    <update id="updateUserInfo" parameterType="com.appleyk.model.User">
         update user
         <set>
-            <if test="name != null">
-            </if>
             <if test="password != null">
                 password = #{password},
             </if>

@@ -16,4 +16,13 @@ public interface UserService {
      */
     public int Login(String name, String password) throws IOException;
 
+    /**
+     * 用户注册
+     * @param name
+     * @param password
+     * @return 1-注册成功 0-注册失败
+     */
+    public int signUp(String name, String password) throws IOException;
+
+    public int UpdateUserInfo(String name, String oldpassword, String newpassword);
 }

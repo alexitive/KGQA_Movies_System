@@ -31,6 +31,12 @@ public interface UserMapper {
      */
     public User getUserById(int id);
 
+    /**
+     * 通过用户名查询用户
+     * @param name
+     * @return
+     */
+    public User getUserByName(String name);
 
     /**
      * 通过用户名和密码获取用户，用于用户登录

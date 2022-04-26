@@ -1,5 +1,6 @@
 package com.appleyk.service.impl;
 
+import ch.qos.logback.core.encoder.EchoEncoder;
 import com.appleyk.model.User;
 import com.appleyk.mapper.UserMapper;
 import com.appleyk.service.UserService;
@@ -50,17 +51,78 @@ public class UserServiceImpl implements UserService {
      */
     @Override
     public int Login(String name, String password) throws IOException {
-        openSql();
-        System.out.println(name);
-        System.out.println(password);
-        User user = null;
-        user = userMapper.getUserByAccount(name, password);
-        System.out.println(user);
+        User user = new User();
+        try {
+            openSql();
+            user = userMapper.getUserByAccount(name, password);
+        }catch (Exception e) {
+            System.out.println("用户登录失败");
+            return 0;
+        }
         if(user != null) {
-            System.out.println("return 1");
+            System.out.println("用户登录成功");
             return 1;
         }
-        System.out.println("reruan 0");
+        return 0;
+    }
+
+    /**
+     * 用户注册
+     * @param name
+     * @param password
+     * @return 1-注册成功 0-注册失败
+     * @throws IOException
+     */
+    @Override
+    public int signUp(String name, String password) throws IOException {
+        try{
+            openSql();
+            User user = new User();
+            user.setName(name);
+            user.setPassword(password);
+//            if(userMapper.getUserByName(name) != null) return 0;
+            userMapper.insertUser(user);
+            System.out.println(user);
+        }
+        catch (Exception e) {
+            System.out.println("重复插入");
+            return 0;
+        }
+        if(userMapper.getUserByAccount(name, password) != null) {
+            System.out.println("插入用户成功");
+            return 1; // 数据库中存在此用户
+        }
+        return 0;
+    }
+
+    /**
+     * 修改用户密码
+     * @param name
+     * @param oldpassword
+     * @param newpassword
+     * @return 1-修改成功 0-修改失败
+     */
+    @Override
+    public int UpdateUserInfo(String name, String oldpassword, String newpassword) {
+        try {
+            openSql();
+            User user =  userMapper.getUserByName(name);
+            System.out.println(user);
+            System.out.println("oldpassword:" + oldpassword);
+            System.out.println("newpassword:" + newpassword);
+            if(user.getPassword().equals(oldpassword)) {
+                user.setPassword(newpassword);
+                userMapper.updateUserInfo(user);
+                System.out.println("修改成功");
+                return 1;
+            }
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("出现异常，修改失败1");
+            return 0;
+        }
+        System.out.println("修改失败2");
         return 0;
     }
 }

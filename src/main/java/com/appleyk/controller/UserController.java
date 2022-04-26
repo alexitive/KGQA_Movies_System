@@ -36,7 +36,17 @@ public class UserController {
      */
     @GetMapping("/login")
     public int logIn(@RequestParam(value = "name") String name, @RequestParam(value = "password") String password) throws IOException {
+        return userService.Login(name, password);
+    }
 
+    /**
+     * 用户注册
+     * @param name 用户名
+     * @param password 密码
+     * @return 1-注册成功 0-注册失败
+     */
+    @GetMapping("/signup")
+    public int signUp(@RequestParam(value = "name") String name, @RequestParam(value = "password") String password) throws IOException {
         try{
             userService.openSql();
         }
@@ -44,8 +54,21 @@ public class UserController {
             return 0;
         }
 
-        return userService.Login(name, password);
+        return userService.signUp(name, password);
+    }
 
+    /**
+     * 修改密码
+     * @param name
+     * @param oldpassword
+     * @param newpassword
+     * @return 1-修改成功 0-修改失败
+     */
+    @GetMapping("/changpassword")
+    public int changepassword(@RequestParam(value = "name") String name,
+                              @RequestParam(value = "oldpassword") String oldpassword,
+                              @RequestParam(value = "newpassword") String newpassword) {
+        return userService.UpdateUserInfo(name, oldpassword, newpassword);
     }
 
 }
