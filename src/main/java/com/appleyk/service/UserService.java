@@ -4,11 +4,18 @@ import com.appleyk.model.User;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
+import java.util.List;
 
 
 public interface UserService {
 
     public User getUserById(int id) throws IOException;
+
+    /**
+     * 管理员查询所有用户
+     * @return
+     */
+    public List<User> getAllUser();
 
     /**
      *

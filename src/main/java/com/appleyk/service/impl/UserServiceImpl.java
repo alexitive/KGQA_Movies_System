@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 @Service // 标记为service
 public class UserServiceImpl implements UserService {
@@ -29,6 +30,18 @@ public class UserServiceImpl implements UserService {
         SqlSessionFactory sqlSessionFactory = sqlSessionFactoryBuilder.build(is);
         SqlSession sqlSession = sqlSessionFactory.openSession(true); // true - 自动提交事务
         this.userMapper = sqlSession.getMapper(UserMapper.class);
+    }
+
+    @Override
+    public List<User> getAllUser() {
+        try{
+            openSql();
+            return userMapper.getAllUser();
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     /**

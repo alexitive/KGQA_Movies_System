@@ -2,13 +2,16 @@ package com.appleyk.controller;
 
 
 import com.appleyk.model.User;
+import com.appleyk.service.QuestionService;
 import com.appleyk.service.impl.UserServiceImpl;
+import org.apache.ibatis.annotations.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -17,6 +20,9 @@ public class UserController {
 
     @Autowired
     private UserServiceImpl userService;
+
+    @Autowired
+    QuestionService questService;
 
     @GetMapping("/greeting")
     @ResponseBody
@@ -76,6 +82,23 @@ public class UserController {
                             @RequestParam(value = "password") String password,
                             @RequestParam(value = "comment") String comment) {
         return userService.ChangeComment(name, password, comment);
+    }
+
+    @GetMapping("/getAllUser")
+    public List<User> getAllUser() {
+        return userService.getAllUser();
+    }
+
+    // 前端检查当前操作用户的权限
+//    @GetMapping()
+//    public int setAuthority(User user, int newauthority) {
+//
+//
+//    }
+
+    @RequestMapping("/query")
+    public String query(@RequestParam(value = "question") String question) throws Exception {
+        return questService.answer(question);
     }
 
 }
