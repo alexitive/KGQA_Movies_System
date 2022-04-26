@@ -24,5 +24,21 @@ public interface UserService {
      */
     public int signUp(String name, String password) throws IOException;
 
+    /**
+     * 用户修改密码
+     * @param name
+     * @param oldpassword
+     * @param newpassword
+     * @return
+     */
     public int UpdateUserInfo(String name, String oldpassword, String newpassword);
+
+    /**
+     * 修改个性签名
+     * @param name
+     * @param password
+     * @param comment
+     * @return
+     */
+    public int ChangeComment(String name, String password, String comment);
 }

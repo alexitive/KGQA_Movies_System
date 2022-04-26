@@ -125,4 +125,22 @@ public class UserServiceImpl implements UserService {
         System.out.println("修改失败2");
         return 0;
     }
+
+
+    @Override
+    public int ChangeComment(String name, String password, String comment) {
+        try{
+            openSql();
+            User user =  userMapper.getUserByName(name);
+            user.setCommment(comment);
+            userMapper.updateUserInfo(user);
+            System.out.println("修改成功");
+            return 1;
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("出现异常，修改失败");
+        }
+        return 0;
+    }
 }

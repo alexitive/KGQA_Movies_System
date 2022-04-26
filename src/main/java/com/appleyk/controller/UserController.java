@@ -71,4 +71,11 @@ public class UserController {
         return userService.UpdateUserInfo(name, oldpassword, newpassword);
     }
 
+    @GetMapping("/changcomment")
+    public int changcomment(@RequestParam(value = "name") String name,
+                            @RequestParam(value = "password") String password,
+                            @RequestParam(value = "comment") String comment) {
+        return userService.ChangeComment(name, password, comment);
+    }
+
 }
