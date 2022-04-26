@@ -1,16 +1,33 @@
-import com.bean.User;
-import com.mapper.UserMapper;
+import com.appleyk.model.User;
+import com.appleyk.mapper.UserMapper;
 import org.junit.Test;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
 public class MybatisTest {
+
+    @Autowired
+    UserMapper userMapper;
+
+
+    @Test
+    public void testsetUserAuthority() throws IOException {
+        InputStream is = Resources.getResourceAsStream("mybatis-config.xml");
+        SqlSessionFactoryBuilder sqlSessionFactoryBuilder = new SqlSessionFactoryBuilder();
+        SqlSessionFactory sqlSessionFactory = sqlSessionFactoryBuilder.build(is);
+        SqlSession sqlSession = sqlSessionFactory.openSession(true); // true - 自动提交事务
+        userMapper = sqlSession.getMapper(UserMapper.class);
+
+        userMapper.setUserAuthority(6, 1);
+
+    }
 
     @Test
     public void testdeleteUser() throws IOException {

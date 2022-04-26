@@ -16,6 +16,8 @@
 <!--    <packaging>jar</packaging>-->
     <description>SpringBoot集成Neo4j,结合Spark朴素贝叶斯分类器实现知识图谱的电影问答功能</description>
 
+
+
     <properties>
         <!-- 使用Java8，嘗試使用新特新【stream和lambda】 -->
         <java.version>1.8</java.version>

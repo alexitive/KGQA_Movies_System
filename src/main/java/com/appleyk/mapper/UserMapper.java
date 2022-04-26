@@ -1,13 +1,15 @@
-package com.mapper;
+package com.appleyk.mapper;
 
 
-import com.bean.User;
+import com.appleyk.model.User;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Mapper
+
 @Repository
 public interface UserMapper {
 
@@ -63,6 +65,6 @@ public interface UserMapper {
     /**
      * 设置用户权限
      */
-    public void setUserAuthority();
+    public void setUserAuthority(int id, int authority);
 
 }

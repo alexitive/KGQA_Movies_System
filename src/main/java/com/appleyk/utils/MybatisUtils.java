@@ -1,4 +1,4 @@
-package com.util;
+package com.appleyk.utils;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -17,7 +17,7 @@ public class MybatisUtils {
 
         try {
             //使用mybatis获取sqlsessionfactory对象
-            String resource = "mybatis/mybatis-config.xml";
+            String resource = "mybatis-config.xml";
             File file = new File(resource);
             System.out.println(file.exists());
             InputStream inputStream =  Resources.getResourceAsStream(resource);
@@ -29,7 +29,7 @@ public class MybatisUtils {
     }
 
     public static SqlSession getSqlSession(){
-       return sqlSessionFactory.openSession();
+       return sqlSessionFactory.openSession(true);
     }
 
 }

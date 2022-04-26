@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--接口根据全类名寻找映射文件-->
-<mapper namespace="com.mapper.UserMapper">
+<mapper namespace="com.appleyk.mapper.UserMapper">
 
 <!--    public int getIdByName(String name);-->
     <select id="getIdByName" resultType="int">
@@ -11,20 +11,20 @@
     </select>
 
 <!--    User getUserById(int id);-->
-    <select id="getUserById" resultType="com.bean.User">
+    <select id="getUserById" resultType="com.appleyk.model.User">
         select * from `user`
         where id = #{id}
     </select>
 
     <!--    User getUserByAccount(String name, String password);-->
-    <select id="getUserByAccount" resultType="com.bean.User">
+    <select id="getUserByAccount" resultType="com.appleyk.model.User">
         select * from user
         where name = #{name} and password = #{password}
     </select>
 
 
 <!--    public List<User> getAllUser();-->
-    <select id="getAllUser" resultType="com.bean.User">
+    <select id="getAllUser" resultType="com.appleyk.model.User">
         select * from user
     </select>
 
@@ -56,4 +56,9 @@
         delete from user where id = #{id}
     </delete>
 
+<!--    public void setUserAuthority(int id, int authority);-->
+    <update id="setUserAuthority">
+        update user set authority = #{authority}
+        where id = #{id}
+    </update>
 </mapper>

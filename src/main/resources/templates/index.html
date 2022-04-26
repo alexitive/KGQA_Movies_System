@@ -127,7 +127,7 @@ position: fixed;
 			ajax({
 				url : '/rest/appleyk/question/query?question='+ input.value,
 				success : function(res) {				
-					console.log(res);
+					console.log("11111111",res);
 					var newLi = document.createElement('li');
 					newLi.innerHTML = res;
 					newLi.className = 'msgContent left';

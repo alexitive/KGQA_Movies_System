@@ -1,7 +1,10 @@
-package com.bean;
+package com.appleyk.model;
 
 import org.apache.arrow.flatbuf.Binary;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 
+@Component
 public class User {
 
     private int id; // 限制长度8
