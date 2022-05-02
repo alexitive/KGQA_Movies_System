@@ -1,0 +1,44 @@
+2022-05-01 00:10:28,417 INFO (StartupInfoLogger.java:50)- Starting App on DESKTOP-AT5UPGE with PID 40916 (F:\Projects\KGQA_Movies_System\target\classes started by 14360 in F:\Projects\KGQA_Movies_System)
+2022-05-01 00:10:28,428 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2022-05-01 00:10:50,591 INFO (StartupInfoLogger.java:59)- Started App in 22.911 seconds (JVM running for 26.495)
+2022-05-01 17:37:48,050 INFO (StartupInfoLogger.java:50)- Starting App on DESKTOP-AT5UPGE with PID 18928 (F:\Projects\KGQA_Movies_System\target\classes started by 14360 in F:\Projects\KGQA_Movies_System)
+2022-05-01 17:37:48,057 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2022-05-01 17:38:09,479 INFO (StartupInfoLogger.java:59)- Started App in 22.283 seconds (JVM running for 25.62)
+2022-05-01 18:36:03,866 INFO (StartupInfoLogger.java:50)- Starting App on DESKTOP-AT5UPGE with PID 41112 (F:\Projects\KGQA_Movies_System\target\classes started by 14360 in F:\Projects\KGQA_Movies_System)
+2022-05-01 18:36:03,880 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2022-05-01 18:36:24,546 INFO (StartupInfoLogger.java:59)- Started App in 22.051 seconds (JVM running for 25.619)
+2022-05-01 18:41:52,570 INFO (StartupInfoLogger.java:50)- Starting App on DESKTOP-AT5UPGE with PID 41112 (F:\Projects\KGQA_Movies_System\target\classes started by 14360 in F:\Projects\KGQA_Movies_System)
+2022-05-01 18:41:52,571 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2022-05-01 18:41:55,152 INFO (StartupInfoLogger.java:59)- Started App in 2.618 seconds (JVM running for 356.225)
+2022-05-01 18:42:16,690 INFO (StartupInfoLogger.java:50)- Starting App on DESKTOP-AT5UPGE with PID 41112 (F:\Projects\KGQA_Movies_System\target\classes started by 14360 in F:\Projects\KGQA_Movies_System)
+2022-05-01 18:42:16,691 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2022-05-01 18:42:19,042 INFO (StartupInfoLogger.java:59)- Started App in 2.393 seconds (JVM running for 380.115)
+2022-05-01 18:43:27,330 INFO (StartupInfoLogger.java:50)- Starting App on DESKTOP-AT5UPGE with PID 41112 (F:\Projects\KGQA_Movies_System\target\classes started by 14360 in F:\Projects\KGQA_Movies_System)
+2022-05-01 18:43:27,330 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2022-05-01 18:43:29,214 INFO (StartupInfoLogger.java:59)- Started App in 1.915 seconds (JVM running for 450.287)
+2022-05-01 18:49:39,635 INFO (StartupInfoLogger.java:50)- Starting App on DESKTOP-AT5UPGE with PID 41112 (F:\Projects\KGQA_Movies_System\target\classes started by 14360 in F:\Projects\KGQA_Movies_System)
+2022-05-01 18:49:39,636 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2022-05-01 18:49:41,671 INFO (StartupInfoLogger.java:59)- Started App in 2.071 seconds (JVM running for 822.744)
+2022-05-01 21:11:17,874 INFO (StartupInfoLogger.java:50)- Starting App on DESKTOP-AT5UPGE with PID 41112 (F:\Projects\KGQA_Movies_System\target\classes started by 14360 in F:\Projects\KGQA_Movies_System)
+2022-05-01 21:11:17,874 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2022-05-01 21:11:21,015 INFO (StartupInfoLogger.java:59)- Started App in 3.225 seconds (JVM running for 9321.91)
+2022-05-01 21:12:18,934 INFO (StartupInfoLogger.java:50)- Starting App on DESKTOP-AT5UPGE with PID 41112 (F:\Projects\KGQA_Movies_System\target\classes started by 14360 in F:\Projects\KGQA_Movies_System)
+2022-05-01 21:12:18,934 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2022-05-01 21:12:21,228 INFO (StartupInfoLogger.java:59)- Started App in 2.325 seconds (JVM running for 9382.122)
+2022-05-01 21:14:26,165 INFO (StartupInfoLogger.java:50)- Starting App on DESKTOP-AT5UPGE with PID 41112 (F:\Projects\KGQA_Movies_System\target\classes started by 14360 in F:\Projects\KGQA_Movies_System)
+2022-05-01 21:14:26,166 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2022-05-01 21:14:28,107 INFO (StartupInfoLogger.java:59)- Started App in 1.984 seconds (JVM running for 9509.0)
+2022-05-01 21:27:29,685 INFO (StartupInfoLogger.java:50)- Starting App on DESKTOP-AT5UPGE with PID 41112 (F:\Projects\KGQA_Movies_System\target\classes started by 14360 in F:\Projects\KGQA_Movies_System)
+2022-05-01 21:27:29,685 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2022-05-01 21:27:31,607 INFO (StartupInfoLogger.java:59)- Started App in 1.951 seconds (JVM running for 10292.49)
+2022-05-01 21:42:41,874 INFO (StartupInfoLogger.java:50)- Starting App on DESKTOP-AT5UPGE with PID 38620 (F:\Projects\KGQA_Movies_System\target\classes started by 14360 in F:\Projects\KGQA_Movies_System)
+2022-05-01 21:42:41,879 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2022-05-01 21:43:03,707 INFO (StartupInfoLogger.java:59)- Started App in 22.484 seconds (JVM running for 24.956)
+2022-05-01 21:45:09,977 INFO (StartupInfoLogger.java:50)- Starting App on DESKTOP-AT5UPGE with PID 38620 (F:\Projects\KGQA_Movies_System\target\classes started by 14360 in F:\Projects\KGQA_Movies_System)
+2022-05-01 21:45:09,977 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2022-05-01 21:45:12,496 INFO (StartupInfoLogger.java:59)- Started App in 2.565 seconds (JVM running for 153.744)
+2022-05-01 21:49:01,679 INFO (StartupInfoLogger.java:50)- Starting App on DESKTOP-AT5UPGE with PID 38620 (F:\Projects\KGQA_Movies_System\target\classes started by 14360 in F:\Projects\KGQA_Movies_System)
+2022-05-01 21:49:01,680 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2022-05-01 21:51:09,651 INFO (StartupInfoLogger.java:50)- Starting App on DESKTOP-AT5UPGE with PID 17368 (F:\Projects\KGQA_Movies_System\target\classes started by 14360 in F:\Projects\KGQA_Movies_System)
+2022-05-01 21:51:09,656 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2022-05-01 21:51:26,208 INFO (StartupInfoLogger.java:59)- Started App in 17.422 seconds (JVM running for 19.74)

@@ -1,10 +1,12 @@
 package com.appleyk.model;
 
+import lombok.Data;
 import org.apache.arrow.flatbuf.Binary;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 @Component
+@Data
 public class User {
 
     private int id; // 限制长度8
@@ -15,63 +17,31 @@ public class User {
 
     public User(){}
 
-    public User(String name, String password) {
+    public User(String name, String password, String comment) {
+        this.name = name;
+        this.password = password;
+        this.comment = comment;
+    }
+
+    public User(int id, String name, String password) {
+        this.id = id;
         this.name = name;
         this.password = password;
     }
 
-    public User(String name, String password, String commment) {
-        this.name = name;
-        this.password = password;
-        this.comment = commment;
-    }
-
-    public User(int uid, String name, String password, int authority, String commment) {
-        this.id = uid;
+    public User(int id, String name, String password, int authority) {
+        this.id = id;
         this.name = name;
         this.password = password;
         this.authority = authority;
-        this.comment = commment;
     }
 
-    public int getUid() {
-        return id;
-    }
-
-    public void setUid(int uid) {
-        this.id = uid;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
+    public User(int id, String name, String password, int authority, String comment) {
+        this.id = id;
         this.name = name;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
         this.password = password;
-    }
-
-    public int getAuthority() {
-        return authority;
-    }
-
-    public void setAuthority(int authority) {
         this.authority = authority;
-    }
-
-    public String getCommment() {
-        return comment;
-    }
-
-    public void setCommment(String commment) {
-        this.comment = commment;
+        this.comment = comment;
     }
 
     @Override
@@ -81,7 +51,7 @@ public class User {
                 ", name='" + name + '\'' +
                 ", password='" + password + '\'' +
                 ", authority=" + authority +
-                ", commment='" + comment + '\'' +
+                ", comment='" + comment + '\'' +
                 '}';
     }
 }

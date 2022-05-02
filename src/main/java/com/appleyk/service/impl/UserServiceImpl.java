@@ -33,6 +33,17 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public User getUserByAccount(String name, String password) {
+        try {
+            openSql();
+            return userMapper.getUserByAccount(name, password);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
     public List<User> getAllUser() {
         try{
             openSql();
@@ -76,6 +87,7 @@ public class UserServiceImpl implements UserService {
             System.out.println("用户登录成功");
             return 1;
         }
+        System.out.println("用户登录失败");
         return 0;
     }
 
@@ -98,13 +110,14 @@ public class UserServiceImpl implements UserService {
             System.out.println(user);
         }
         catch (Exception e) {
-            System.out.println("重复插入");
+            System.out.println("用户已存在");
             return 0;
         }
         if(userMapper.getUserByAccount(name, password) != null) {
-            System.out.println("插入用户成功");
+            System.out.println("注册成功");
             return 1; // 数据库中存在此用户
         }
+        System.out.println("注册失败");
         return 0;
     }
 
@@ -145,7 +158,7 @@ public class UserServiceImpl implements UserService {
         try{
             openSql();
             User user =  userMapper.getUserByName(name);
-            user.setCommment(comment);
+            user.setComment(comment);
             userMapper.updateUserInfo(user);
             System.out.println("修改成功");
             return 1;

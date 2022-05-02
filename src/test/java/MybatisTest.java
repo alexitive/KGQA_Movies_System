@@ -59,7 +59,7 @@ public class MybatisTest {
         System.out.println(user.toString());
         int uid = userMapper.getIdByName("amy");
         user.setPassword("xfxfxf");
-        user.setCommment("who am i");
+        user.setComment("who am i");
         userMapper.updateUserInfo(user);
 
     }

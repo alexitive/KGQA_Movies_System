@@ -105,7 +105,7 @@ public class QuestionServiceImpl implements QuestionService {
         if (answer != null && !"".equals(answer) && !("\\N").equals(answer)) {
             return answer;
         } else {
-            return "sorry,小主,我没有找到你要的答案";
+            return "sorry，没有找到你要的答案";
         }
     }
 

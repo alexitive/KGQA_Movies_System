@@ -9,6 +9,8 @@ import java.util.List;
 
 public interface UserService {
 
+    public User getUserByAccount(String name, String password);
+
     public User getUserById(int id) throws IOException;
 
     /**
